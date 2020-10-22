@@ -1,0 +1,22 @@
+#include<simplecpp>
+main_program
+{
+    int Q,A,c;
+    cin>>Q;
+    repeat(Q)
+    {
+    cin>>A;
+    if(A%2==0)
+    c++;
+    if(A%3==0)
+    c++;
+    if(A%5==0)
+    c++;
+    if(A%7==0)
+    c++;
+    if(A%11==0)
+    c++;
+    cout<<c;
+    c=0;
+    }
+    }
