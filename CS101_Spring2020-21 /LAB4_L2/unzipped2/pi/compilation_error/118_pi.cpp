@@ -1,0 +1,12 @@
+#include<simpleccp>
+mainprogram{
+int n,i{1};
+double answer{1};
+cin >>n;
+repeat(n){
+if (1 % 2 ==0){
+    answer += 1.0/(2*i)+1);
+    }
+    else{
+    answer -= 1.0/((2*i))
+    }}

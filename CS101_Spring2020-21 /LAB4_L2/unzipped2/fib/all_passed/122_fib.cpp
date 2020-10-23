@@ -1,0 +1,23 @@
+#include<simplecpp>
+main_program{
+int n,a,x,p,s;
+cin>>x;
+a=0;
+p=1;
+n=0;
+s=0;
+while(x>=s){
+    s=p+a;
+    a=p;
+    p=s;
+    n=n+1;
+        }
+if(x==0)
+  cout<<"0";
+else{
+if(x==a)
+  cout<<n;
+else
+  cout<<"-1";
+}
+}

@@ -1,0 +1,41 @@
+#include<simplecpp>
+#include<math.h>
+main_program
+{
+    int n;
+    cin>>n;
+    int a=0,b=1,c,ctr=0;
+    if(n==a)
+    {
+        cout<<"0";
+        ctr=1;
+    }
+    if(n==b)
+    {
+        cout<<"1";
+        ctr=1;
+    }
+    if(n>=0&&n<=pow(10,16))
+    {
+        for(int i=2;i>=1;i++)
+        {
+            c=a+b;
+            if(n==c&&n!=1)
+            {
+                cout<<i;
+                ctr=1;
+                break;
+            }
+            a=b;
+            b=c;
+            if(c>n)
+            {
+                break;
+            }
+        }
+        if(ctr==0)
+        {
+            cout<<"-1";
+        }
+    }
+}
