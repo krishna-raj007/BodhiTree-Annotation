@@ -1,0 +1,20 @@
+#include<simplecpp>
+main_program{
+long long int i=0,an_1=0,an_2=1,a_n,n,k,b;
+cin>>n>>k;
+if(n==1){
+cout<<0<<endl;}
+else{cout<<"0"<<endl;
+cout<<1%k<<endl;
+for(;i<n-2;i++){
+a_n=an_2+an_1;
+if(a_n<k){
+cout<<a_n<<endl;}
+else{
+a_n=a_n-k;
+b=(a_n)%k;
+cout<<b<<endl;}
+an_1=an_2;
+an_2=a_n;
+}
+}}
